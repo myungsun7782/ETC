@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19455" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19454"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FloatingButtonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="WeatherBG_Moon.png" translatesAutoresizingMaskIntoConstraints="NO" id="uY5-p1-IfI">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VJl-vY-NQN">
+                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="ic6-oN-yGi"/>
+                                    <constraint firstAttribute="width" constant="60" id="kWD-Kp-aVG"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="add_icon_green.png"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <segue destination="KC9-0C-F4P" kind="show" identifier="showPopup" animates="NO" id="Ttq-XH-aIa"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="uY5-p1-IfI" secondAttribute="bottom" id="4Hh-1a-LDf"/>
+                            <constraint firstItem="uY5-p1-IfI" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="FDF-nM-xOe"/>
+                            <constraint firstItem="uY5-p1-IfI" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="QIm-GW-xMv"/>
+                            <constraint firstAttribute="trailing" secondItem="uY5-p1-IfI" secondAttribute="trailing" id="R2J-Ja-KxW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="VJl-vY-NQN" secondAttribute="bottom" constant="40" id="SgG-0K-BFo"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VJl-vY-NQN" secondAttribute="trailing" constant="40" id="d8G-4k-IwX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="100"/>
+        </scene>
+        <!--Floating Button List View Controller-->
+        <scene sceneID="nsW-HM-Cyh">
+            <objects>
+                <viewController id="KC9-0C-F4P" customClass="FloatingButtonListViewController" customModule="FloatingButtonApp" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="OdM-4A-7TX">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hSc-rc-baU">
+                                <rect key="frame" x="319" y="473" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="bby-m0-xIP"/>
+                                    <constraint firstAttribute="height" constant="50" id="fUK-Da-pcS"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="food3.png"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="n3c-cB-3EB">
+                                <rect key="frame" x="319" y="553" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="B97-fq-3jv"/>
+                                    <constraint firstAttribute="height" constant="50" id="tZ5-c5-1hJ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="food2.png"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6pi-oH-fDO">
+                                <rect key="frame" x="319" y="633" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="FKq-88-ApC"/>
+                                    <constraint firstAttribute="height" constant="50" id="v7K-hE-KQQ"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="food1.png"/>
+                                </buttonConfiguration>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HCY-pH-3HM">
+                                <rect key="frame" x="314" y="708" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="36a-sf-sSe"/>
+                                    <constraint firstAttribute="width" constant="60" id="Zk4-1Y-bED"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain">
+                                    <backgroundConfiguration key="background" image="add_icon_green.png"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="KC9-0C-F4P" eventType="touchUpInside" id="DCo-m7-pp5"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="O2H-1Z-keh"/>
+                        <constraints>
+                            <constraint firstItem="O2H-1Z-keh" firstAttribute="trailing" secondItem="HCY-pH-3HM" secondAttribute="trailing" constant="40" id="1Em-ft-TDz"/>
+                            <constraint firstItem="HCY-pH-3HM" firstAttribute="centerY" secondItem="n3c-cB-3EB" secondAttribute="centerY" constant="160" id="8VP-fd-aXd"/>
+                            <constraint firstItem="HCY-pH-3HM" firstAttribute="centerX" secondItem="hSc-rc-baU" secondAttribute="centerX" id="8kz-5K-2hC"/>
+                            <constraint firstItem="HCY-pH-3HM" firstAttribute="centerX" secondItem="6pi-oH-fDO" secondAttribute="centerX" id="9cT-dc-thL"/>
+                            <constraint firstItem="O2H-1Z-keh" firstAttribute="bottom" secondItem="HCY-pH-3HM" secondAttribute="bottom" constant="40" id="cIi-sU-jIA"/>
+                            <constraint firstItem="HCY-pH-3HM" firstAttribute="centerY" secondItem="6pi-oH-fDO" secondAttribute="centerY" constant="80" id="gJw-lo-yqp"/>
+                            <constraint firstItem="HCY-pH-3HM" firstAttribute="centerY" secondItem="hSc-rc-baU" secondAttribute="centerY" constant="240" id="guI-jJ-6U1"/>
+                            <constraint firstItem="HCY-pH-3HM" firstAttribute="centerX" secondItem="n3c-cB-3EB" secondAttribute="centerX" id="wla-hY-k9k"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="acC-sy-wxJ"/>
+                    <connections>
+                        <outlet property="btn1CenterY" destination="gJw-lo-yqp" id="D9i-Xz-ixa"/>
+                        <outlet property="btn2CenterY" destination="8VP-fd-aXd" id="3sr-2E-GEw"/>
+                        <outlet property="btn3CenterY" destination="guI-jJ-6U1" id="awB-Ol-NvG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0ZL-kB-Yuo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="876.81159420289862" y="99.776785714285708"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="WeatherBG_Moon.png" width="180" height="320.16000366210938"/>
+        <image name="add_icon_green.png" width="385.60000610351562" height="384.79998779296875"/>
+        <image name="food1.png" width="256" height="256"/>
+        <image name="food2.png" width="256" height="256"/>
+        <image name="food3.png" width="256" height="256"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

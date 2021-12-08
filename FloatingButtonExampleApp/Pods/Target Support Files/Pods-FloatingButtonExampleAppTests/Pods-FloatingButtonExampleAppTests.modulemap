@@ -1,0 +1,6 @@
+framework module Pods_FloatingButtonExampleAppTests {
+  umbrella header "Pods-FloatingButtonExampleAppTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
